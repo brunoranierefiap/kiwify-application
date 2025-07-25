@@ -27,7 +27,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onBack }) => {
     setError(null);
     
     try {
-      const response = await fetch('/api/webhook/admin');
+      const response = await fetch('https://kiwify-n8n.12zlr4.easypanel.host/webhook/admin');
       
       if (!response.ok) {
         throw new Error(`Erro ${response.status}: ${response.statusText}`);

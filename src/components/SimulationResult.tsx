@@ -59,7 +59,7 @@ export const SimulationResult: React.FC<SimulationResultProps> = ({
     };
 
     // Envia requisição POST para o webhook
-    fetch('/api/webhook/aceitar-proposta', {
+    fetch('https://kiwify-n8n.12zlr4.easypanel.host/webhook/admin', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
